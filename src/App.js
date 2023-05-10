@@ -1,11 +1,17 @@
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [name, setName] = useState('Name');
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <div class="form-group">
+    <label htmlFor="exampleInputEmail1">Enter Your Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" onChange={(e) => setName(e.target.value)}/>
+  </div>
         <p>
           Sunil Ji
           <br />
@@ -20,7 +26,7 @@ function App() {
           Balwant ji
         </p>
         <p>
-          Deepak ki Shaadi me jlul jlul aana
+          <i>{name}</i> ki Shaadi me jlul jlul aana
         </p>
         <p>Baal Manuhar: <strong>Balwant</strong></p>
         <a
