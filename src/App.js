@@ -6,7 +6,7 @@ import {Contact} from './components/Contact';
 function App() {
   return (
 
-    <Router>
+    <Router basename="/myreactapp">
            <Routes>
                  <Route exact path='/' element={< Home />}></Route>
                  <Route exact path='/about' element={< About />}></Route>
