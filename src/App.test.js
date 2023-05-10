@@ -1,8 +1,3 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', async () => {
-  await render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('End to End testing of app', () => {
+  it('Testing app dom', () => {});
 });

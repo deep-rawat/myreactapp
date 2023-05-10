@@ -8,34 +8,34 @@ export const RouteCmp = () => {
       {" "}
       <ul className="App-header">
         <li>
-          <span
+          <a
             href=" "
             onClick={(e) => {
               e.preventDefault();
               navigate("/");
             }}>
             Home
-          </span>
+          </a>
         </li>
         <li>
-          <span
+          <a
             href=" "
             onClick={(e) => {
               e.preventDefault();
               navigate("/about");
             }}>
             About Us
-          </span>
+          </a>
         </li>
         <li>
-          <span
+          <a
             href=" "
             onClick={(e) => {
               e.preventDefault();
               navigate("/contact");
             }}>
             Contact Us
-          </span>
+          </a>
         </li>
       </ul>
     </div>
