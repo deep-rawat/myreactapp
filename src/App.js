@@ -1,19 +1,30 @@
-import {Route, HashRouter as Router, Routes} from 'react-router-dom';
-import {Home} from './components/Home';
+import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import {About} from './components/About';
+import {Home} from './components/Home';
 import {Contact} from './components/Contact';
 
 function App() {
   return (
-
-    <Router basename="/myreactapp">
-           <Routes>
-                 <Route index path='/' element={< Home />}></Route>
-                 <Route path='/about' element={< About />}></Route>
-                 <Route path='/contact' element={< Contact />}></Route>
-          </Routes>
-       </Router>
-  
+    <Router basename={process.env.PUBLIC_URL}>
+      <div>
+        <div className="menu">
+          <Link to="/">Home</Link>  
+          <Link to="/about">About</Link> 
+          <Link to="/contact">External</Link>
+        </div>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
