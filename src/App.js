@@ -9,8 +9,8 @@ function App() {
     <Router basename="/myreactapp">
            <Routes>
                  <Route exact path='/myreactapp' element={< Home />}></Route>
-                 <Route exact path='/about' element={< About />}></Route>
-                 <Route exact path='/contact' element={< Contact />}></Route>
+                 <Route path='/about' element={< About />}></Route>
+                 <Route path='/contact' element={< Contact />}></Route>
           </Routes>
        </Router>
   
