@@ -8,7 +8,7 @@ function App() {
 
     <Router basename="/myreactapp">
            <Routes>
-                 <Route exact path='/myreactapp' element={< Home />}></Route>
+                 <Route index path='/' element={< Home />}></Route>
                  <Route path='/about' element={< About />}></Route>
                  <Route path='/contact' element={< Contact />}></Route>
           </Routes>
