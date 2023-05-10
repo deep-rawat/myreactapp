@@ -1,5 +1,11 @@
 import React from "react";
+import { RouteCmp } from "./RouteCmp";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <RouteCmp />
+      <div>Home</div>
+    </>
+  );
 };
