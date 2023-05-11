@@ -11,7 +11,7 @@ import {Contact} from './components/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <div className="menu">
           <Link to="/">Home</Link>  
