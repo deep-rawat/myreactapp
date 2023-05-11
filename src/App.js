@@ -14,7 +14,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div>
         <div className="menu">
-          <Link to="/myreactapp">Home</Link>  
+          <Link to="/">Home</Link>  
           <Link to="/about">About</Link> 
           <Link to="/contact">External</Link>
         </div>
